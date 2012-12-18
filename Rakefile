@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Productivenator::Application.load_tasks
+The_Productivenator::Application.load_tasks
