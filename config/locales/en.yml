@@ -4,6 +4,8 @@
 en:
   activerecord:
     attributes:
+      user:
+        password_digest: "Password"
       task:
         task_etc: "Time to Complete"
         reward: "Fun Reward"
