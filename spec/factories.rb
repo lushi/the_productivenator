@@ -1,8 +1,8 @@
 FactoryGirl.define do
-  factory :task do
-    task     "Work through Ruby Koans"
-    task_etc 120
-    reward "Nap"
-    reward_etc 30
+  factory :user do
+    name     "Lushi Li"
+    email    "lushil@example.com"
+    password "foobar"
+    password_confirmation "foobar"
   end
 end
