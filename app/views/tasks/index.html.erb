@@ -2,7 +2,7 @@
 
   <div>
     <%= form_for(@task) do |f| %>
-      <%= render 'shared/error_messages' %>
+      <%= render 'shared/tasks_error_messages' %>
 
       <%= f.label :task %>
       <%= f.text_field :task %>
