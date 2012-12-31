@@ -1,6 +1,6 @@
 TheProductivenator::Application.routes.draw do
   resources :users
-  resources :tasks
+  resources :tasks #LIMIT TO ONLY :create, :destroy, :update?
   resources :sessions, only: [:new, :create, :destroy]
   
 

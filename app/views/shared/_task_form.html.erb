@@ -1,0 +1,17 @@
+<%= form_for(@task) do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    
+    <%= f.text_field :task, placeholder: "Write down your task..." %>
+
+    <%= f.label :task_etc, "for approximately" %>
+    <%= f.text_field :task_etc %> minutes
+
+
+    <%= f.text_field :reward, placeholder: "Name a fun activity as a reward for completing the task..." %>
+
+    <%= f.label :reward_etc, "for" %>
+    <%= f.text_field :reward_etc %> minutes
+  
+    <%= f.submit "Add to to-do list", class: "btn btn-large btn-primary" %>
+<% end %>
+  

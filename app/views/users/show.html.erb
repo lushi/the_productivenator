@@ -1,1 +1,14 @@
-<%= @user.name %>, <%= @user.email %>
+<!--DELETE?-->
+
+<% provide(:title, @user.name) %>
+<h1>
+	Your To-Do List
+</h1>
+    <% if @user.tasks.any? %> 
+      <h3>Tasks (<%= @user.tasks.count %>)</h3>
+      <ol class="tasks">
+        <%= render @tasks %>
+      </ol>
+      <%= will_paginate @tasks %>
+    <% end %>
+ 
