@@ -1,19 +1,23 @@
 <% if signed_in? %>
-  <div class="row">
-    	<section>
-        <%= render 'shared/task_form' %>
-      </section>
+ <div class="row">
+ 	<div class="span8 offset2">
     	<section>
         <%= render 'shared/todo_list' %>
       </section>
-  </div>  
+      <br>
+      <br>
+      <section>
+        <%= render 'shared/task_form' %>
+      </section>
+  </div> 
+  </div> 
 <% else %>
 
 <div class="center hero-unit">
 	<h1>The Productivenator</h1>
 	
 	<h2>
-		Turning procrastination into productivity.
+		A task manager to turn procrastination into productivity.
 	</h2>
 
 		<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>

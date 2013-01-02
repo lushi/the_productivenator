@@ -1,17 +1,24 @@
+<h2 class="left-align">Add a new item</h2>
+<div class="row">
 <%= form_for(@task) do |f| %>
+
     <%= render 'shared/error_messages', object: f.object %>
     
-    <%= f.text_field :task, placeholder: "Write down your task..." %>
+    <div class="span3">
+    <%= f.label :task, "Task" %>
+    <%= f.text_field :task, placeholder: "Enter your task here" %>
 
-    <%= f.label :task_etc, "for approximately" %>
-    <%= f.text_field :task_etc %> minutes
+    <%= f.label :task_etc, "for" %>
+    <%= f.text_field :task_etc, placeholder: "approximate time to complete" %> minutes.
+  	</div>
 
-
-    <%= f.text_field :reward, placeholder: "Name a fun activity as a reward for completing the task..." %>
+  	<div class="span3 offset1">
+    <%= f.label :reward, "Reward" %>
+    <%= f.text_field :reward, placeholder: "Enter a fun activity" %>
 
     <%= f.label :reward_etc, "for" %>
-    <%= f.text_field :reward_etc %> minutes
-  
-    <%= f.submit "Add to to-do list", class: "btn btn-large btn-primary" %>
+    <%= f.text_field :reward_etc, placeholder: "time allotted" %> minutes.
+  	</div>
+    <%= f.submit "Add to to-do list", class: "btn btn-small" %>
 <% end %>
-  
+ </div>

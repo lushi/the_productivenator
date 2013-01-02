@@ -28,10 +28,13 @@ textarea {
 
 .center {
   text-align: center;
-  /*background: #e3e3e;*/
   h1 {
   margin-bottom: 10px;
   }
+}
+
+.left-align {
+  text-align: left;
 }
 
 /* typography */
@@ -146,10 +149,43 @@ input
   @extend .error;
  }
 
+.btn {
+  margin-top: 10px;
+}
 
- /* users index */
+.btn-small {
+  margin-left: 20px;
+}
+ /* to-do list*/
 
 .tasks {
+  margin: 17px 0 0 23px;
+
+  li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .task_item {
+    width: 500px;
+  }
+
+  .task {
+    font-weight: bold;
+  }
+
+  .reward_item {
+    width: 500px;
+  }
+
+  .reward {
+    font-weight: bold;
+  }
+}
+
+/* users index */
+
+.users {
   list-style: none;
   margin: 0;
   li {
@@ -161,3 +197,4 @@ input
     }
   }
 }
+  

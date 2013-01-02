@@ -21,17 +21,3 @@ class Task < ActiveRecord::Base
   validates :reward_etc, presence: true
   validates :user_id, presence: true
 end
-
-#CALCULATE TOTAL HOURS OF TASKS AND REWARDS. NEED TO FIX CODE
-#class Summary
-	#def initialize(tasks)
-		#@sum = get_sum(tasks)
-	#end
-
-	#def get_sum(tasks)
-	#	sum = 0
-	#	tasks.each do |task|
-	#		sum += task_etc
-	#	end
-	#end
-#end

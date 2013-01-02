@@ -5,13 +5,4 @@ class StaticPagesController < ApplicationController
   	@todo_items = current_user.todo_list.all
   	end
   end
-
-  def about
-  end
-
-  def help
-  end
-
-  def contact
-  end
 end

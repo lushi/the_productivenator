@@ -1,8 +1,15 @@
 <li id="<%= todo_item.id %>">
-  <span class="content"><%= todo_item.task %></span>
+<div class="task_item">
+  <span class="task"><%= todo_item.task %></span>
+  <span class="task_etc">for <%= pluralize(todo_item.task_etc, "minute") %>.</span>
+ </div>
+ <div class="reward_item">
+  Your reward: <span class="reward"><%= todo_item.reward %></span>
+  <span class="reward_etc">for <%= pluralize(todo_item.reward_etc, "minute") %>!</span>
+ </div>
   <% if current_user?(todo_item.user) %>
-    <%= link_to "complete!", todo_item, method: :delete,
-                                     data: { confirm: "The item will be deleted. You sure?" },
+    <%= link_to "Done", todo_item, method: :delete,
+                                     data: { confirm: "Great job! Hope you enjoyed the reward. This item will be deleted." },
                                      title: todo_item.task %>
   <% end %>
 </li>
